@@ -1,0 +1,21 @@
+@Library('shared-library') _
+pipeline {
+    agent { label "linux" }
+    stages {
+        stage('Build') {
+            steps {
+                hello "Build"
+            }
+        }
+        stage('Test') {
+            steps {
+                hello "Test"
+            }
+        }
+        stage('Deploy') {
+            steps {
+                hello "Deploy"
+            }
+        }
+    }
+}
