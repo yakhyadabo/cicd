@@ -8,10 +8,8 @@
 !Jenkinsfile
 !*.yml
 !*.yaml
-!*.go
+!*.groovy
 !images/*
-!go.mod
-!go.sum
 !*.json
 !*.sh
 !*/
