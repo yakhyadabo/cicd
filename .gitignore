@@ -1,0 +1,17 @@
+*
+!.gitattributes
+!.gitignore
+!.gitkeep
+!README.adoc
+!Makefile
+!Dockerfile
+!Jenkinsfile
+!*.yml
+!*.yaml
+!*.go
+!images/*
+!go.mod
+!go.sum
+!*.json
+!*.sh
+!*/
