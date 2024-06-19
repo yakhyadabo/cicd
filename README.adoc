@@ -1,0 +1,25 @@
+= CICD with Jenkins Controller and Agents
+
+== 0. Setup Jenkins
+
+=== 0.1 Create .env file
+
+=== 0.1. New key pair
+
+[source,shell]
+----
+ssh-keygen -t rsa -f jenkins/keys/jenkins_key
+----
+
+=== Run Jenkins controller
+
+[source,shell]
+----
+make jenkins_start
+----
+
+=== Get the password to proceed installation:
+[source,shell]
+----
+docker logs jenkins | less
+----
