@@ -6,10 +6,11 @@
 !Makefile
 !Dockerfile
 !Jenkinsfile
+!images/*
 !*.yml
 !*.yaml
 !*.groovy
-!images/*
 !*.json
+!*.env
 !*.sh
 !*/
