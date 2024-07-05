@@ -44,6 +44,8 @@ services:
 #      SERVER_SECURE: 'true'
 #      SERVER_SCHEME: https
 #      SERVER_PROXY_PORT: 443
+#      SEARCH_ENABLED: 'false'
+#      PLUGIN_SEARCH_CONFIG_BASEURL: http://opensearch.docker.localhost
       SETUP_DISPLAYNAME: Bitbucket
       SETUP_BASEURL: ${BITBUCKET_URL}
       JDBC_DRIVER: org.postgresql.Driver
@@ -169,11 +171,3 @@ services:
 #    depends_on:
 #      postgres:
 #        condition: service_healthy
-
-# docker exec -it bitbucket_bitbucket_1 sed -i 's/^::1/#&/g' /elc/hosts
-# docker exec -it bitbucket_bitbucket_1 cat /etc/hosts
-
-
-# docker exec -it bitbucket_bitbucket_1 cp /etc/hosts /etc/hosts2 && sed -i 's/^::1/#&/g' /etc/hosts2
-# docker exec -it bitbucket_bitbucket_1 sed -i 's/^::1/#&/g' /etc/hosts2
-# docker exec -it bitbucket_bitbucket_1 cat  /etc/hosts2 > /etc/hosts
