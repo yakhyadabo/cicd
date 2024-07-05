@@ -8,3 +8,15 @@ jenkins_start:
 
 jenkins_stop:
 	docker-compose -f jenkins/compose.yaml stop
+
+bitbucket_status:
+	docker-compose -f vcs/bitbucket/compose.yaml config
+
+bitbucket_start:
+	docker-compose -f vcs/bitbucket/compose.yaml up -d
+
+bitbucket_stop:
+	docker-compose -f vcs/bitbucket/compose.yaml stop
+
+bitbucket_clean:
+	docker-compose -f vcs/bitbucket/compose.yaml down
